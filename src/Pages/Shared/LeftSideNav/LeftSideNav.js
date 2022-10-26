@@ -4,7 +4,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import { FaGoogle, FaGithub } from "react-icons/fa";
+import { FaGoogle, FaFacebook } from "react-icons/fa";
+
 
 const LeftSideNav = () => {
     const [programming, setProgramming] = useState([]);
@@ -18,7 +19,7 @@ const LeftSideNav = () => {
 
     return (
         <div>
-            <h4>All Programming data: {programming.length}</h4>
+            
             <div>
                 {
                     programming.map(program => <p key={program.id}>
@@ -27,10 +28,9 @@ const LeftSideNav = () => {
                 }
             </div>
             <div>
-
-                <ButtonGroup vertical>
-                    <Button variant='outline-warning' ><FaGoogle></FaGoogle> Login with Google</Button>
-                    <Button variant='outline-dark'><FaGithub></FaGithub> Login with Github</Button>
+            <ButtonGroup vertical>
+                    <Button className='mb-4 rounded' variant='outline-info' ><FaGoogle></FaGoogle> Login with Google</Button>
+                    <Button className='rounded' variant='outline-dark'><FaFacebook></FaFacebook> Facebook</Button>
                 </ButtonGroup>
                 
             </div>

@@ -12,16 +12,22 @@ import Home from "../../Pages/Home/Home/Home";
         children:[
             {
                path:'/',
-               element:<Home></Home>
+               element:<Home></Home>,
+               loader: () => fetch(`http://localhost:5000/detail`)
             },
             {
                 path:'/category/:id',
-                element: <Category></Category>
+                element: <Category></Category>,
+                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
             },
             {
                 path:'/details/:id',
                 element:<Details></Details>
             },
+            {
+                path:'/button',
+                element:<button></button>
+            }
         ]
     }
  ])
