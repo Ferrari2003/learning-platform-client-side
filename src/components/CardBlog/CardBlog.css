@@ -8,3 +8,48 @@
     text-align: center;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+   
+    min-height: 100vh;
+}
+h1{
+    font-size: 5em;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+h1 span
+{
+    transition: 0.5s;
+}
+h1:hover span:nth-child(2)
+{
+    margin-right: 10px;
+}
+h1:hover span:nth-child(1)::after
+{
+    content: "'";
+}
+
+h1:hover span:nth-child(2)
+{
+    margin-left: 40px;
+}
+
+h1:hover span 
+{
+   color: black;
+   text-shadow: 0 0 10px black,
+   0 0 20px black,
+   0 0 40px black,
+   0 0 80px black,
+   0 0 120px black,
+   0 0 160px black,
+}   

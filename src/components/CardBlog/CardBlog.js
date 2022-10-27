@@ -51,7 +51,7 @@ const CardBlog = () => {
                 </div>
             </div>
             <div className='button mt-4'>
-            <button className=" btn btn-active btn-secondary">Button</button>
+            <button className=" btn btn-active btn-dark">View All Courses</button>
             </div>
         </div>
     );
