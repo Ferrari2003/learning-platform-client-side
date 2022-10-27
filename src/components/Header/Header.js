@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CardBlog from '../CardBlog/CardBlog';
 
 import Course from '../Course/Course';
 import Course_view from '../Course_view/Course_view';
@@ -9,7 +10,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div>
+        <div >
             <div className="text navbar bg-black ">
                 <div className="navbar bg-base-100">
                     <div className="flex-1">
@@ -27,6 +28,8 @@ const Header = () => {
             </div>
             <Cover></Cover>
             <Course_view></Course_view>
+            <Course></Course>
+            <CardBlog></CardBlog>            
         </div >
     );
 };

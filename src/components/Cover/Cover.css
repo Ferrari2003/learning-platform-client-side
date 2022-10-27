@@ -4,3 +4,131 @@
 h1{
     color: black;
 }
+
+*
+
+
+
+
+{
+
+
+   margin: 0;
+
+
+   padding: 0;
+
+
+   box-sizing: border-box;
+
+
+   font-family: arial;
+
+
+}
+
+
+
+
+
+
+
+body{
+
+
+   min-height: 100vh;
+
+
+}  
+
+
+
+
+
+
+
+.style{
+
+
+   position: absolute;
+
+
+   font-size: 2em;
+
+
+   color: #0e3742;
+
+
+   letter-spacing: 15px;
+
+
+   text-transform: uppercase;
+
+
+   width: 100%;
+
+
+  
+
+
+   -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+
+
+   line-height:0.70em;
+
+
+   outline: none;
+
+
+   animation: animate 5s linear infinite;
+
+
+}
+
+
+@keyframes animate {
+
+
+   0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,100%
+
+
+   {
+
+
+       color: tomato;
+
+
+       text-sizing: none;
+
+
+   }
+
+
+   10.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+
+
+   {
+
+
+       color:crimson;
+
+
+       text-shadow: 0 0 10px #0ebcf4,
+
+
+       0 0 20px #0ebcf4,
+
+
+       0 0 40px #0ebcf4,
+
+
+       0 0 80px #0ebcf4,
+
+
+       0 0 160px #0ebcf4,;
+
+
+   }
+
+
+}
