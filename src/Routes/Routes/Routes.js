@@ -1,33 +1,28 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "../../layout/Main";
-import Category from "../../Pages/Category/Category/Category";
-import Details from "../../Pages/Details/Details/Details";
-import Home from "../../Pages/Home/Home/Home";
+import Course from "../../components/Course/Course";
+import Cover from "../../components/Cover/Cover";
+import Header from "../../components/Header/Header";
+import Main from "../../Layout/Main";
 
-
- export const router = createBrowserRouter([
-    {
-        path:'/',
-        element: <Main></Main>,
-        children:[
-            {
-               path:'/',
-               element:<Home></Home>,
-               loader: () => fetch(`http://localhost:5000/detail`)
-            },
-            {
-                path:'/category/:id',
-                element: <Category></Category>,
-                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
-            },
-            {
-                path:'/details/:id',
-                element:<Details></Details>
-            },
-            {
-                path:'/button',
-                element:<button></button>
-            }
-        ]
-    }
+ export const  router = createBrowserRouter([
+        {
+            path:'/',
+            element:<Main></Main>,
+            children:[
+               {
+                path:'/',
+                element:<Header></Header>
+               },
+               {
+                path:'/course',
+                element:<Course></Course>
+               },
+               {
+                path:'/cover',
+                element:<Cover></Cover>
+               },
+               
+               
+            ]
+        }
  ])
