@@ -1,3 +1,12 @@
+.startedButton h3{
+    background-color: lightpink;
+    padding: 10px;
+    box-shadow: 10px 20px 30px 40px lightcoral;
+    border-radius: 10px;
+    color: aliceblue;
+    
+}
+
 .cover_photo img{
     width: 100%;
 }
@@ -6,9 +15,6 @@ h1{
 }
 
 *
-
-
-
 
 {
 

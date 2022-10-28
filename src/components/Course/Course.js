@@ -1,7 +1,10 @@
 import React from 'react';
 import './Course.css'
 
+
 const Course = () => {
+    
+   
     return (
         <div className='container mb-11'>
             <div className='texts'>
@@ -14,7 +17,7 @@ const Course = () => {
                         <img src="https://placeimg.com/400/225/arch" alt="Shoes" className="rounded-xl" />
                     </figure>
                     <div className="card-body items-center text-center">
-                        <h2 className="card-title">Shoes!</h2>
+                        <h2 className="card-title"></h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions">
                             <button className="btn btn-primary">DETAILS</button>
@@ -55,6 +58,9 @@ const Course = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='button mt-4'>
+            <button className=" btn btn-active btn-dark">View All Courses</button>
             </div>
         </div>
     );

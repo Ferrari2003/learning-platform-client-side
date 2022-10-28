@@ -30,7 +30,7 @@ body{
    position: absolute;
 
 
-   font-size: 2em;
+   font-size: 3em;
 
 
    color: #0e3742;
@@ -68,7 +68,7 @@ body{
    {
 
 
-       color: tomato;
+       color: blue;
 
 
        text-sizing: none;
@@ -83,7 +83,7 @@ body{
    {
 
 
-       color:crimson;
+       color:black;
 
 
        text-shadow: 0 0 10px #0ebcf4,

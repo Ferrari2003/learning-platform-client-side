@@ -5,10 +5,10 @@ const CardBlog = () => {
     return (
         <div className='container'> 
             <div className='texts'>
-                <h3 className='style'>Popular Blog</h3>
+                <h3 >Popular Blog</h3>
                 <h5>Read ours blogs to gain knowledge</h5>
             </div>
-            <div className='cardBlog mt-11 ga'>
+            <div className='cardBlog mt-11 gap-5'>
                 <div className="card card-compact w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                     <div className="card-body">
