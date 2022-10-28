@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Detail = () => {
+const Blogs = () => {
     const [details, setDetails] = useState({})
 
     useEffect(() => {
@@ -38,4 +37,4 @@ const Detail = () => {
     );
 };
 
-export default Detail;
+export default Blogs;

@@ -1,4 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
+import Blogs from "../../components/Blogs/Blogs";
+import CardBlog from "../../components/CardBlog/CardBlog";
 import Course from "../../components/Course/Course";
 import CourseDetails from "../../components/Course_details/CourseDetails";
 import Course_view from "../../components/Course_view/Course_view";
@@ -6,6 +8,7 @@ import Cover from "../../components/Cover/Cover";
 import Detail from "../../components/Detail/Detail";
 import Header from "../../components/Header/Header";
 import Login from "../../components/Login/Login";
+import Page404 from "../../components/Page404/Page404";
 import Register from "../../components/Register/Register";
 
 import Main from "../../Layout/Main";
@@ -28,9 +31,14 @@ import Main from "../../Layout/Main";
                 element:<CourseDetails></CourseDetails>
                },
                {
-                path:'/course/:id',
+                path:'/course',
                 element:<Course></Course>,
-                loader: () => fetch(`http://localhost:5000/details_data`)
+               
+               },
+               
+               {
+                path:'/blogs',
+                element:<Blogs></Blogs>
                },
                {
                 path:'/detail',
@@ -40,6 +48,10 @@ import Main from "../../Layout/Main";
                 path:'/course_view',
                 element:<Course_view></Course_view>
                },
+               {
+                path:'/cardBlog',
+                element:<CardBlog></CardBlog>
+               },
               {
                 path:'/login',
                 element:<Login></Login>
@@ -47,6 +59,10 @@ import Main from "../../Layout/Main";
               {
                 path:'/register',
                 element:<Register></Register>
+              },
+              {
+                path:'/*',
+                element: <Page404></Page404>
               }
                
             ]
