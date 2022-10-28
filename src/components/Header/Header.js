@@ -1,5 +1,7 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Context/UserContext';
 import CardBlog from '../CardBlog/CardBlog';
 
 import Course from '../Course/Course';
@@ -9,6 +11,15 @@ import './Header.css'
 
 
 const Header = () => {
+    const {user, logOut} = useContext(AuthContext);
+    console.log(user)
+
+    const handleLogOut = () => {
+        logOut()
+        .then (() => {})
+        .catch( error => console.error(error));
+    }
+ 
     return (
         <div >
             <div className="text navbar bg-black ">
@@ -18,7 +29,7 @@ const Header = () => {
                     </div>
                     <div className="flex-none">
                         <ul className="menu menu-horizontal p-0">
-                            <li><Link to={'/courseDetails'}className="text-decoration-none font"><h5>Course</h5></Link></li>
+                            <li><Link to={'/courseDetails'} className="text-decoration-none font"><h5>Course</h5></Link></li>
                             <li tabIndex={0}>
                                 <Link className="text-decoration-none">
                                     <h5>Blogs</h5>
@@ -28,6 +39,9 @@ const Header = () => {
                                     <li><Link to={'/cardBlog'} className="text-decoration-none"><h5>Blogs</h5></Link></li>
                                     <li><Link to={'/login'} className="text-decoration-none"><h5>Login</h5></Link></li>
                                     <li><Link to={'/register'} className="text-decoration-none"><h5>Register</h5></Link></li>
+
+                                    <span>{user?.email}</span>
+                                    <button onClick={handleLogOut} className="btn btn-outline btn-error">LogOut</button>
                                 </ul>
                             </li>
                         </ul>

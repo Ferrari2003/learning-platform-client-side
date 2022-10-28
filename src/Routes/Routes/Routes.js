@@ -8,6 +8,7 @@ import Cover from "../../components/Cover/Cover";
 import Detail from "../../components/Detail/Detail";
 import Header from "../../components/Header/Header";
 import Login from "../../components/Login/Login";
+import PrivateRoute from "../../components/PrivateRoute/PrivateRoute";
 import Register from "../../components/Register/Register";
 
 import Main from "../../Layout/Main";
@@ -28,7 +29,7 @@ import Main from "../../Layout/Main";
                },
                {
                 path:'/courseDetails',
-                element:<CourseDetails></CourseDetails>
+                element:<PrivateRoute><CourseDetails></CourseDetails></PrivateRoute>
                },
                {
                 path:'/course',

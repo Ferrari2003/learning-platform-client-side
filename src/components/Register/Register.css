@@ -1,0 +1,7 @@
+.buttonStyle button{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
