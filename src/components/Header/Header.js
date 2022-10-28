@@ -12,13 +12,13 @@ const Header = () => {
     return (
         <div >
             <div className="text navbar bg-black ">
-                <div className="navbar bg-base-100">
+                <div className="navbar">
                     <div className="flex-1">
                         <Link className="btn text btn-ghost normal-case text-xl"><h4>Learning</h4></Link>
                     </div>
                     <div className="flex-none">
                         <ul className="menu menu-horizontal p-0">
-                            <li><Link to={'/courseDetails'}className="text-decoration-none " ><h5>Course</h5></Link></li>
+                            <li><Link to={'/courseDetails'}className="text-decoration-none font"><h5>Course</h5></Link></li>
                             <li tabIndex={0}>
                                 <Link className="text-decoration-none">
                                     <h5>Blogs</h5>

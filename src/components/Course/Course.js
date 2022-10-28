@@ -19,6 +19,7 @@ const Course = () => {
     },[])
    
     return (
+        
         <div className='container mb-11'>
             <div className='texts'>
                 <h3>Popular Courses</h3>

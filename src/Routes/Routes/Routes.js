@@ -8,7 +8,6 @@ import Cover from "../../components/Cover/Cover";
 import Detail from "../../components/Detail/Detail";
 import Header from "../../components/Header/Header";
 import Login from "../../components/Login/Login";
-import Page404 from "../../components/Page404/Page404";
 import Register from "../../components/Register/Register";
 
 import Main from "../../Layout/Main";
@@ -21,7 +20,8 @@ import Main from "../../Layout/Main";
                {
                 path:'/',
                 element:<Header></Header>
-               },                       
+               },  
+                                  
                {
                 path:'/cover',
                 element:<Cover></Cover>
@@ -61,8 +61,8 @@ import Main from "../../Layout/Main";
                 element:<Register></Register>
               },
               {
-                path:'/*',
-                element: <Page404></Page404>
+                path:'*',
+                element:<div><h1 className="text-center">404_not Found</h1></div>
               }
                
             ]

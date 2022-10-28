@@ -48,13 +48,13 @@ body{
    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
 
 
-   line-height:0.70em;
+   line-height:0.65em;
 
 
    outline: none;
 
 
-   animation: animate 5s linear infinite;
+   animation: animate 8s linear infinite;
 
 }
 
@@ -68,7 +68,7 @@ body{
    {
 
 
-       color: blue;
+       color: white;
 
 
        text-sizing: none;
@@ -106,4 +106,7 @@ body{
 
 }
 
+.font h5{
+   font-size: 20px;
+}
 
